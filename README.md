@@ -12,4 +12,6 @@ new_york_city.csv
 washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+From Udacity Programming for Data Science with Python course
+Original Repo: https://github.com/udacity/pdsnd_github 
+Instructors: Juno Lee, Richard Kalehoff
