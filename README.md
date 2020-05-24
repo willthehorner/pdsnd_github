@@ -4,7 +4,7 @@ May 22, 2020
 ### Interactive Analysis of Urban Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+A python program that guides the user to various summary statistics by analyzing bikeshare data from different cities as specified in the data files
 
 ### Files used
 Include the files used
