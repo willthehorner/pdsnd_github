@@ -107,7 +107,7 @@ def station_stats(df):
     df['Station Combo'] = df['Start Station'] + ' to ' + df['End Station']
     statcol = ['Start Station', 'End Station', 'Station Combo']
     for col in statcol:
-        print('The most common {} is '.format(col.lower()) + str(df[col].mode()[0]))
+        print('The most common {} is {}.'.format(col.lower(), str(df[col].mode()[0])))
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
