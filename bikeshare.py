@@ -66,7 +66,6 @@ def load_data(city, month, day):
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['Month'] = df['Start Time'].dt.month_name()
     df['Weekday'] = df['Start Time'].dt.weekday_name
-    df['Start Hour'] = df['Start Time'].dt.hour
 
     if month != 'all':
         df = df[df['Month'] == month.title()]
@@ -85,6 +84,7 @@ def time_stats(df):
 
 
     # Display the most common month, day of week, and start hour
+    df['Start Hour'] = df['Start Time'].dt.hour
     statcol = ['Month', 'Weekday', 'Start Hour']
     for col in statcol:
         if len(df[col].unique()) == 1:
